@@ -6,10 +6,16 @@ body {
   font-size: 14px;
   color:#0A143A;
 }
-.header {
-  max-width: 1146px;
+
+.container {
+max-width: 1146px;
   margin: auto;
+}
+.header {
+  
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 .navbar {
   display: flex;
@@ -84,4 +90,119 @@ display: flex;
 
 .search-button-text {
   margin-left: 5px;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+grid-column-gap: 30px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.card {
+  margin-bottom: 20px;
+  max-width: 264px;
+}
+.card:not(:nth-child(3n)){
+  margin-right: 20px;
+
+}
+
+.card-title {
+
+  color: #256EEB;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like {
+  background-color: #ffff;
+  border:none;
+  cursor:pointer;
+  margin-left: 15px;
+}
+
+.card-image {
+  border-radius:10px;
+  width: 264px;
+  height: 178px;
+  object-fit:cover;
+}
+
+.card-link {
+  text-decoration: none;
+}
+.card-price {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+
+.card-text{
+  font-size: 14px;
+  line-height: 16px;
+margin-bottom: 4px;
+margin-top: 0;
+  color: #C4C4C4;
+}
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+color: #0A143A;
+}
+
+.service {
+  margin-bottom: 25px;
+}
+
+.service-title {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  color: #0A143A;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.service-text {
+  color: #0A143A;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+}
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  display: inline-block;
+font-size: 14px;
+line-height: 16px;
+color: #C4C4C4;
+margin-bottom: 5px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+color: inherit;
+display: inline-block;
+margin-bottom: 5px;
 }
